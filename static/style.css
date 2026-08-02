@@ -1,0 +1,217 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background: linear-gradient(135deg,#74ebd5,#9face6);
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.container{
+
+    width:700px;
+max-width:95%;
+
+    background: rgba(255,255,255,0.25);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
+    color:white;
+
+    animation:fadeIn 0.8s ease;
+}
+
+.header{
+
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.header p{
+
+    font-size:16px;
+    opacity:.9;
+}
+
+.input-group{
+
+    margin-bottom:18px;
+}
+
+label{
+
+    display:block;
+    margin-bottom:8px;
+
+    font-weight:500;
+}
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+
+    box-shadow:0 0 10px #ffffff;
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:scale(1.03);
+}
+
+button[type="submit"]{
+
+    background:#00e676;
+
+    color:white;
+}
+
+button[type="submit"]:hover{
+
+    background:#00c853;
+}
+
+.reset-btn{
+
+    background:#ff5252;
+
+    color:white;
+}
+
+.reset-btn:hover{
+
+    background:#e53935;
+}
+
+.result-card{
+
+    margin-top:35px;
+
+    background:white;
+
+    color:#333;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    animation:pop .5s ease;
+}
+
+.result-card h1{
+
+    color:#2575fc;
+
+    margin:15px 0;
+
+    font-size:34px;
+}
+
+footer{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    opacity:.85;
+
+    font-size:14px;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(.8);
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
