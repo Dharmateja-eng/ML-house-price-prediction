@@ -104,4 +104,4 @@ http://127.0.0.1:5000
 
 B.Tech – Artificial Intelligence & Machine Learning
 
-GitHub: *(Add your GitHub profile link after uploading.)*
+GitHub: [Dharmateja-eng](https://github.com/Dharmateja-eng)
