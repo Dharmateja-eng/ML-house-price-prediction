@@ -6,10 +6,12 @@ app = Flask(__name__)
 
 model = joblib.load("house_price_model.pkl")
 
+
 @app.route("/", methods=["GET", "POST"])
 def home():
 
-    prediction = None
+    prediction_usd = None
+    prediction_inr = None
 
     if request.method == "POST":
 
@@ -21,12 +23,12 @@ def home():
         waterfront = int(request.form["waterfront"])
         view = int(request.form["view"])
         condition = int(request.form["condition"])
-        current_date = datetime.now()
 
+        current_date = datetime.now()
         year = current_date.year
         month = current_date.month
 
-        prediction = model.predict([[
+        prediction_usd = model.predict([[
             bedrooms,
             bathrooms,
             sqft_living,
@@ -39,7 +41,14 @@ def home():
             month
         ]])[0]
 
-    return render_template("index.html", prediction=prediction)
+        usd_to_inr = 87
+        prediction_inr = prediction_usd * usd_to_inr
+
+    return render_template(
+        "index.html",
+        prediction_usd=prediction_usd,
+        prediction_inr=prediction_inr
+    )
 
 
 if __name__ == "__main__":

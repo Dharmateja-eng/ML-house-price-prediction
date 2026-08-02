@@ -9,7 +9,6 @@
 }
 
 body{
-
     background: linear-gradient(135deg,#74ebd5,#9face6);
     min-height:100vh;
 
@@ -21,9 +20,8 @@ body{
 }
 
 .container{
-
     width:700px;
-max-width:95%;
+    max-width:95%;
 
     background: rgba(255,255,255,0.25);
 
@@ -41,159 +39,168 @@ max-width:95%;
 }
 
 .header{
-
     text-align:center;
     margin-bottom:30px;
 }
 
 .header h1{
-
     font-size:34px;
     margin-bottom:10px;
 }
 
 .header p{
-
     font-size:16px;
     opacity:.9;
 }
 
 .input-group{
-
     margin-bottom:18px;
 }
 
 label{
-
     display:block;
     margin-bottom:8px;
-
     font-weight:500;
 }
 
 input,
 select{
-
     width:100%;
-
     padding:14px;
-
     border:none;
-
     outline:none;
-
     border-radius:12px;
-
     font-size:15px;
 }
 
 input:focus,
 select:focus{
-
     box-shadow:0 0 10px #ffffff;
 }
 
 button{
-
     width:100%;
-
     padding:15px;
-
     margin-top:12px;
-
     border:none;
-
     border-radius:12px;
-
     font-size:18px;
-
     font-weight:bold;
-
     cursor:pointer;
-
     transition:.3s;
 }
 
 button:hover{
-
     transform:scale(1.03);
 }
 
 button[type="submit"]{
-
     background:#00e676;
-
     color:white;
 }
 
 button[type="submit"]:hover{
-
     background:#00c853;
 }
 
 .reset-btn{
-
     background:#ff5252;
-
     color:white;
 }
 
 .reset-btn:hover{
-
     background:#e53935;
 }
 
+/* ===========================
+   Result Card
+=========================== */
+
 .result-card{
-
     margin-top:35px;
-
     background:white;
-
     color:#333;
-
     border-radius:15px;
-
-    padding:25px;
-
+    padding:30px;
     text-align:center;
-
     animation:pop .5s ease;
 }
 
-.result-card h1{
-
+.result-card h2{
     color:#2575fc;
-
-    margin:15px 0;
-
-    font-size:34px;
+    font-size:30px;
+    margin-bottom:25px;
 }
+
+.price-box{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.currency-card{
+    flex:1;
+    min-width:250px;
+    background:#f8f9ff;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+    transition:.3s;
+}
+
+.currency-card:hover{
+    transform:translateY(-5px);
+}
+
+.currency-card h3{
+    color:#6c63ff;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.price{
+    font-size:28px;
+    font-weight:bold;
+    color:#00b894;
+}
+
+.note{
+    margin-top:25px;
+    padding:15px;
+    background:#fff8e1;
+    border-left:5px solid #ff9800;
+    border-radius:10px;
+    color:#444;
+    font-size:15px;
+    line-height:1.6;
+    text-align:left;
+}
+/* ===========================
+   Footer
+=========================== */
 
 footer{
-
     margin-top:35px;
-
     text-align:center;
-
     opacity:.85;
-
     font-size:14px;
 }
+
+/* ===========================
+   Animations
+=========================== */
 
 @keyframes fadeIn{
 
     from{
-
         opacity:0;
         transform:translateY(-30px);
-
     }
 
     to{
-
         opacity:1;
         transform:translateY(0);
-
     }
 
 }
@@ -201,17 +208,13 @@ footer{
 @keyframes pop{
 
     from{
-
         transform:scale(.8);
         opacity:0;
-
     }
 
     to{
-
         transform:scale(1);
         opacity:1;
-
     }
 
 }

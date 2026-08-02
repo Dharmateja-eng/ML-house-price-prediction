@@ -82,14 +82,38 @@ Enter the property details below and receive an estimated market value.
         <button type="reset" class="reset-btn">🔄 Reset</button>
 
     </form>
+{% if prediction_usd %}
 
-    {% if prediction %}
-    <div class="result-card">
-        <h2>💰 Estimated House Price</h2>
-        <h1>₹ {{ "{:,.2f}".format(prediction) }}</h1>
-        <p>Prediction generated successfully using the Machine Learning model.</p>
+<div class="result-card">
+
+    <h2>💰 Estimated House Price</h2>
+
+    <div class="price-box">
+
+        <div class="currency-card">
+            <h3>🇺🇸 USD Price</h3>
+            <p class="price">
+                $ {{ "{:,.2f}".format(prediction_usd) }}
+            </p>
+        </div>
+
+        <div class="currency-card">
+            <h3>🇮🇳 Approximate INR Price</h3>
+            <p class="price">
+                ₹ {{ "{:,.2f}".format(prediction_inr) }}
+            </p>
+        </div>
+
     </div>
-    {% endif %}
+
+    <p class="note">
+    <strong>Note:</strong> This model was trained on a U.S. housing dataset.
+    The INR value shown is an approximate currency conversion using
+    <strong>1 USD = ₹87</strong> and does not represent Indian real estate prices.
+</p>
+</div>
+
+{% endif %}
 
     <footer>
     <hr>
