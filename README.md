@@ -84,9 +84,17 @@ http://127.0.0.1:5000
 
 ## 📸 Application Preview
 
-*(Add a screenshot of your application here after uploading.)*
+### 🏠 Home Page
 
----
+![Home Page](images/homepage.png)
+
+### 📝 User Input Form
+
+![User Input Form](images/form.png)
+
+### 💰 Prediction Result
+
+![Prediction Result](images/prediction.png)
 
 ## 🔮 Future Improvements
 
