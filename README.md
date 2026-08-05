@@ -77,7 +77,7 @@ python app.py
 5. Open your browser and visit:
 
 ```
-http://127.0.0.1:5000
+https://ml-house-price-prediction-cuvm.onrender.com
 ```
 
 ---
