@@ -77,7 +77,9 @@ python app.py
 5. Open your browser and visit:
 
 ```
-https://ml-house-price-prediction-cuvm.onrender.com
+## 🌐 Live Demo
+
+👉 **Live Application:** https://ml-house-price-prediction-cuvm.onrender.com
 ```
 
 ---
