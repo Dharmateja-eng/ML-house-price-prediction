@@ -73,14 +73,17 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
 5. Open your browser and visit:
 
+```text
+http://127.0.0.1:5000
 ```
+
+---
+
 ## 🌐 Live Demo
 
-👉 **Live Application:** https://ml-house-price-prediction-cuvm.onrender.com
-```
+🚀 **[Try the Live Application](https://ml-house-price-prediction-cuvm.onrender.com)**
 
 ---
 
@@ -90,9 +93,9 @@ python app.py
 
 ![Home Page](images/homepage.png)
 
-### 📝 User Input Form
+### 📝 Input Form
 
-![User Input Form](images/form.png)
+![Input Form](images/form.png)
 
 ### 💰 Prediction Result
 
